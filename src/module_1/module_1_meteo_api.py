@@ -45,6 +45,7 @@ def get_data_meteo_api(city: str):
 
 
 def get_dict_values_for_year(days_list: list[str], data_list: list[float]):
+    # Creates a list with all the values for each year
     year_list = {}
     actual_year = []
     for index, i in enumerate(days_list):
@@ -97,16 +98,18 @@ def calculate_data(json: dict[str, any]):
     return (df_mean, df_var, df_std)
 
 
+def create_plot_and_save(df, filename, x="Year"):
+    plot = df.plot(x=x, figsize=(20, 8)).get_figure()
+    plot.savefig(filename)
+
+
 def main():
     for city in COORDINATES:
         json = get_data_meteo_api(city)
         df_mean, df_var, df_std = calculate_data(json)
-        res_mean = df_mean.plot(x="Year", figsize=(20, 8)).get_figure()
-        res_mean.savefig(f"src/module_1/images/mean_{city}.png")
-        res_var = df_var.plot(x="Year", figsize=(20, 8)).get_figure()
-        res_var.savefig(f"src/module_1/images/var_{city}.png")
-        res_std = df_std.plot(x="Year", figsize=(20, 8)).get_figure()
-        res_std.savefig(f"src/module_1/images/std_{city}.png")
+        create_plot_and_save(df_mean, f"src/module_1/images/mean_{city}.png")
+        create_plot_and_save(df_var, f"src/module_1/images/var_{city}.png")
+        create_plot_and_save(df_std, f"src/module_1/images/std_{city}.png")
 
 
 if __name__ == "__main__":
