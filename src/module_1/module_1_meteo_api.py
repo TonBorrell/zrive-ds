@@ -3,7 +3,7 @@ from jsonschema import validate
 import numpy as np
 import pandas as pd
 
-from validate_json_meteo_api import meteo_api_schema
+from utils.validate_json_meteo_api import meteo_api_schema
 
 API_URL = "https://climate-api.open-meteo.com/v1/climate?"
 COORDINATES = {
@@ -14,6 +14,7 @@ COORDINATES = {
 VARIABLES = "temperature_2m_mean,precipitation_sum,soil_moisture_0_to_10cm_mean"
 INITIAL_DATE = "1950-01-01"
 FINAL_DATE = "2050-12-31"
+MODELS = "CMCC_CM2_VHR4,FGOALS_f3_H,HiRAM_SIT_HR,MRI_AGCM3_2_S,EC_Earth3P_HR,MPI_ESM1_2_XR,NICAM16_8S"
 
 
 def get_request(url: str):
@@ -33,7 +34,7 @@ def get_data_meteo_api(city: str):
     city_longitude = COORDINATES[city]["longitude"]
 
     json_response = get_request(
-        f"{API_URL}latitude={city_latitude}&longitude={city_longitude}&start_date={INITIAL_DATE}&end_date={FINAL_DATE}&models=CMCC_CM2_VHR4,FGOALS_f3_H,HiRAM_SIT_HR,MRI_AGCM3_2_S,EC_Earth3P_HR,MPI_ESM1_2_XR,NICAM16_8S&daily={VARIABLES}"
+        f"{API_URL}latitude={city_latitude}&longitude={city_longitude}&start_date={INITIAL_DATE}&end_date={FINAL_DATE}&models={MODELS}&daily={VARIABLES}"
     )
 
     if not json_response:
