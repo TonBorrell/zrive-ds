@@ -3,7 +3,7 @@ from jsonschema import validate
 import numpy as np
 import pandas as pd
 
-from utils.validate_json_meteo_api import meteo_api_schema
+from src.module_1.utils.validate_json_meteo_api import meteo_api_schema
 
 API_URL = "https://climate-api.open-meteo.com/v1/climate?"
 COORDINATES = {
