@@ -299,13 +299,13 @@ final_df["created_at"] = pd.to_datetime(final_df["created_at"])
 final_df["order_date"] = pd.to_datetime(final_df["order_date"]).dt.date
 ```
 
-    C:\Users\tonbo\AppData\Local\Temp\ipykernel_20012\3548399307.py:2: SettingWithCopyWarning: 
+    C:\Users\tonbo\AppData\Local\Temp\ipykernel_23064\3548399307.py:2: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       final_df["created_at"] = pd.to_datetime(final_df["created_at"])
-    C:\Users\tonbo\AppData\Local\Temp\ipykernel_20012\3548399307.py:3: SettingWithCopyWarning: 
+    C:\Users\tonbo\AppData\Local\Temp\ipykernel_23064\3548399307.py:3: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -387,11 +387,11 @@ pipe.fit(train_X, train_y.values.ravel())
 
 
 
-<style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;standardscaler&#x27;, StandardScaler()),
+<style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;standardscaler&#x27;, StandardScaler()),
                 (&#x27;logisticregression&#x27;,
-                 LogisticRegression(C=1, penalty=&#x27;l1&#x27;, solver=&#x27;saga&#x27;))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[(&#x27;standardscaler&#x27;, StandardScaler()),
+                 LogisticRegression(C=1, penalty=&#x27;l1&#x27;, solver=&#x27;saga&#x27;))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" ><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[(&#x27;standardscaler&#x27;, StandardScaler()),
                 (&#x27;logisticregression&#x27;,
-                 LogisticRegression(C=1, penalty=&#x27;l1&#x27;, solver=&#x27;saga&#x27;))])</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label sk-toggleable__label-arrow">StandardScaler</label><div class="sk-toggleable__content"><pre>StandardScaler()</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression(C=1, penalty=&#x27;l1&#x27;, solver=&#x27;saga&#x27;)</pre></div></div></div></div></div></div></div>
+                 LogisticRegression(C=1, penalty=&#x27;l1&#x27;, solver=&#x27;saga&#x27;))])</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">StandardScaler</label><div class="sk-toggleable__content"><pre>StandardScaler()</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression(C=1, penalty=&#x27;l1&#x27;, solver=&#x27;saga&#x27;)</pre></div></div></div></div></div></div></div>
 
 
 
@@ -409,8 +409,8 @@ y_pred
 
 
 
-    array([0.00915496, 0.01739639, 0.00935807, ..., 0.00344246, 0.00284815,
-           0.00344246])
+    array([0.00915498, 0.01739591, 0.00935809, ..., 0.00344241, 0.00284812,
+           0.00344241])
 
 
 
@@ -428,7 +428,7 @@ pr_display.plot()
 
 
 
-    <sklearn.metrics._plot.precision_recall_curve.PrecisionRecallDisplay at 0x2118b771f60>
+    <sklearn.metrics._plot.precision_recall_curve.PrecisionRecallDisplay at 0x2a86244d6f0>
 
 
 
@@ -438,13 +438,28 @@ pr_display.plot()
     
 
 
+We've checked that our models execute, now let's write a baseline and after that test which parameters fit best to out case
+
 
 ```python
-#TODO fer el mateix per a diferents normas i diferents valors de C, comprovar quin resultat es el millor
-#TODO entendre correctament els resultats, com haurien de sortir i com represetarlos correctament
+# Baseline will be popularity
+precision, recall, _ = precision_recall_curve(val_y, val_X["global_popularity"])
+pr_display = PrecisionRecallDisplay(precision=precision, recall=recall)
+pr_display.plot()
 ```
 
-We've checked that our models execute, now let's test which parameters fit best to out case
+
+
+
+    <sklearn.metrics._plot.precision_recall_curve.PrecisionRecallDisplay at 0x2a8623736a0>
+
+
+
+
+    
+![png](push_noti_explore_files/push_noti_explore_23_1.png)
+    
+
 
 
 ```python
@@ -466,7 +481,7 @@ def plot_metrics(c:str, y_true: pd.Series, y_pred: pd.Series, figure:tuple[matpl
     ax[0].set_title("Precision-Recall curve")
     ax[0].legend()
 
-    ax[1].plot(tpr, fpr, label=f"C used {c}; AUC={roc_auc:.4f}; {lgd_msg}")
+    ax[1].plot(fpr, tpr, label=f"C used {c}; AUC={roc_auc:.4f}; {lgd_msg}")
     ax[1].set_xlabel("False Positive Rate")
     ax[1].set_ylabel("True Positive Rate")
     ax[1].set_title("ROC Curve")
@@ -479,7 +494,7 @@ Ridge
 
 
 ```python
-cs = [1, 0.1, 1e-2, 1e-3, 1e-4, 10]
+cs = ["baseline", 1, 0.1, 1e-2, 1e-3, 1e-4, 10]
 fig1, axs1 = plt.subplots(1, 2, figsize=(16, 8))
 fig1.suptitle("Train metrics")
 fig2, axs2 = plt.subplots(1, 2, figsize=(16, 8))
@@ -487,21 +502,27 @@ fig2.suptitle("Validation metrics")
 
 
 for index, c in enumerate(cs):
-    print(f"Creating model for C = {c}, index {index}")
-    pipe = make_pipeline(StandardScaler(), LogisticRegression(penalty='l2', C=c, solver="saga"))
-    pipe.fit(train_X, train_y.values.ravel())
-    train_y_pred = pipe.predict_proba(train_X)[:, 1]
-    val_y_pred = pipe.predict_proba(val_X)[:, 1]
+    if c == "baseline":
+        print("Creating baseline model")
+        train_y_pred = train_X["global_popularity"]
+        val_y_pred = val_X["global_popularity"]
+    else:
+        print(f"Creating model for C = {c}, index {index}")
+        pipe = make_pipeline(StandardScaler(), LogisticRegression(penalty='l2', C=c, solver="saga"))
+        pipe.fit(train_X, train_y.values.ravel())
+        train_y_pred = pipe.predict_proba(train_X)[:, 1]
+        val_y_pred = pipe.predict_proba(val_X)[:, 1]
     plot_metrics(c, train_y, train_y_pred, (fig1, axs1))
     plot_metrics(c, val_y, val_y_pred, (fig2, axs2))
 ```
 
-    Creating model for C = 1, index 0
-    Creating model for C = 0.1, index 1
-    Creating model for C = 0.01, index 2
-    Creating model for C = 0.001, index 3
-    Creating model for C = 0.0001, index 4
-    Creating model for C = 10, index 5
+    Creating baseline model
+    Creating model for C = 1, index 1
+    Creating model for C = 0.1, index 2
+    Creating model for C = 0.01, index 3
+    Creating model for C = 0.001, index 4
+    Creating model for C = 0.0001, index 5
+    Creating model for C = 10, index 6
     
 
 
@@ -520,7 +541,7 @@ Lasso
 
 
 ```python
-cs = [1, 0.1, 1e-2, 1e-3, 1e-4, 10]
+cs = ["baseline", 1, 0.1, 1e-2, 1e-3, 1e-4, 10]
 fig1, axs1 = plt.subplots(1, 2, figsize=(16, 8))
 fig1.suptitle("Train metrics")
 fig2, axs2 = plt.subplots(1, 2, figsize=(16, 8))
@@ -528,21 +549,27 @@ fig2.suptitle("Validation metrics")
 
 
 for index, c in enumerate(cs):
-    print(f"Creating model for C = {c}, index {index}")
-    pipe = make_pipeline(StandardScaler(), LogisticRegression(penalty='l1', C=c, solver="saga"))
-    pipe.fit(train_X, train_y.values.ravel())
-    train_y_pred = pipe.predict_proba(train_X)[:, 1]
-    val_y_pred = pipe.predict_proba(val_X)[:, 1]
+    if c == "baseline":
+        print("Creating baseline model")
+        train_y_pred = train_X["global_popularity"]
+        val_y_pred = val_X["global_popularity"]
+    else:
+        print(f"Creating model for C = {c}, index {index}")
+        pipe = make_pipeline(StandardScaler(), LogisticRegression(penalty='l1', C=c, solver="saga"))
+        pipe.fit(train_X, train_y.values.ravel())
+        train_y_pred = pipe.predict_proba(train_X)[:, 1]
+        val_y_pred = pipe.predict_proba(val_X)[:, 1]
     plot_metrics(c, train_y, train_y_pred, (fig1, axs1))
     plot_metrics(c, val_y, val_y_pred, (fig2, axs2))
 ```
 
-    Creating model for C = 1, index 0
-    Creating model for C = 0.1, index 1
-    Creating model for C = 0.01, index 2
-    Creating model for C = 0.001, index 3
-    Creating model for C = 0.0001, index 4
-    Creating model for C = 10, index 5
+    Creating baseline model
+    Creating model for C = 1, index 1
+    Creating model for C = 0.1, index 2
+    Creating model for C = 0.01, index 3
+    Creating model for C = 0.001, index 4
+    Creating model for C = 0.0001, index 5
+    Creating model for C = 10, index 6
     
 
 
@@ -605,7 +632,7 @@ importance_cols = ["ordered_before", "global_popularity", "abandoned_before"]
 
 
 ```python
-cs = [1, 0.1, 1e-2, 1e-3, 1e-4, 10]
+cs = ["baseline", 1, 0.1, 1e-2, 1e-3, 1e-4, 10]
 fig1, axs1 = plt.subplots(1, 2, figsize=(16, 8))
 fig1.suptitle("Train metrics")
 fig2, axs2 = plt.subplots(1, 2, figsize=(16, 8))
@@ -613,21 +640,27 @@ fig2.suptitle("Validation metrics")
 
 
 for index, c in enumerate(cs):
-    print(f"Creating model for C = {c}, index {index}")
-    pipe = make_pipeline(StandardScaler(), LogisticRegression(penalty='l1', C=c, solver="saga"))
-    pipe.fit(train_X[importance_cols], train_y.values.ravel())
-    train_y_pred = pipe.predict_proba(train_X[importance_cols])[:, 1]
-    val_y_pred = pipe.predict_proba(val_X[importance_cols])[:, 1]
+    if c == "baseline":
+        print("Creating baseline model")
+        train_y_pred = train_X["global_popularity"]
+        val_y_pred = val_X["global_popularity"]
+    else:
+        print(f"Creating model for C = {c}, index {index}")
+        pipe = make_pipeline(StandardScaler(), LogisticRegression(penalty='l1', C=c, solver="saga"))
+        pipe.fit(train_X[importance_cols], train_y.values.ravel())
+        train_y_pred = pipe.predict_proba(train_X[importance_cols])[:, 1]
+        val_y_pred = pipe.predict_proba(val_X[importance_cols])[:, 1]
     plot_metrics(c, train_y, train_y_pred, (fig1, axs1))
     plot_metrics(c, val_y, val_y_pred, (fig2, axs2))
 ```
 
-    Creating model for C = 1, index 0
-    Creating model for C = 0.1, index 1
-    Creating model for C = 0.01, index 2
-    Creating model for C = 0.001, index 3
-    Creating model for C = 0.0001, index 4
-    Creating model for C = 10, index 5
+    Creating baseline model
+    Creating model for C = 1, index 1
+    Creating model for C = 0.1, index 2
+    Creating model for C = 0.01, index 3
+    Creating model for C = 0.001, index 4
+    Creating model for C = 0.0001, index 5
+    Creating model for C = 10, index 6
     
 
 
@@ -644,7 +677,7 @@ for index, c in enumerate(cs):
 
 
 ```python
-cs = [1, 0.1, 1e-2, 1e-3, 1e-4, 10]
+cs = ["baseline", 1, 0.1, 1e-2, 1e-3, 1e-4, 10]
 fig1, axs1 = plt.subplots(1, 2, figsize=(16, 8))
 fig1.suptitle("Train metrics")
 fig2, axs2 = plt.subplots(1, 2, figsize=(16, 8))
@@ -652,21 +685,27 @@ fig2.suptitle("Validation metrics")
 
 
 for index, c in enumerate(cs):
-    print(f"Creating model for C = {c}, index {index}")
-    pipe = make_pipeline(StandardScaler(), LogisticRegression(penalty='l2', C=c, solver="saga"))
-    pipe.fit(train_X[importance_cols], train_y.values.ravel())
-    train_y_pred = pipe.predict_proba(train_X[importance_cols])[:, 1]
-    val_y_pred = pipe.predict_proba(val_X[importance_cols])[:, 1]
+    if c == "baseline":
+        print("Creating baseline model")
+        train_y_pred = train_X["global_popularity"]
+        val_y_pred = val_X["global_popularity"]
+    else:
+        print(f"Creating model for C = {c}, index {index}")
+        pipe = make_pipeline(StandardScaler(), LogisticRegression(penalty='l2', C=c, solver="saga"))
+        pipe.fit(train_X[importance_cols], train_y.values.ravel())
+        train_y_pred = pipe.predict_proba(train_X[importance_cols])[:, 1]
+        val_y_pred = pipe.predict_proba(val_X[importance_cols])[:, 1]
     plot_metrics(c, train_y, train_y_pred, (fig1, axs1))
     plot_metrics(c, val_y, val_y_pred, (fig2, axs2))
 ```
 
-    Creating model for C = 1, index 0
-    Creating model for C = 0.1, index 1
-    Creating model for C = 0.01, index 2
-    Creating model for C = 0.001, index 3
-    Creating model for C = 0.0001, index 4
-    Creating model for C = 10, index 5
+    Creating baseline model
+    Creating model for C = 1, index 1
+    Creating model for C = 0.1, index 2
+    Creating model for C = 0.01, index 3
+    Creating model for C = 0.001, index 4
+    Creating model for C = 0.0001, index 5
+    Creating model for C = 10, index 6
     
 
 
@@ -680,6 +719,8 @@ for index, c in enumerate(cs):
 ![png](push_noti_explore_files/push_noti_explore_33_2.png)
     
 
+
+As we have seen in all the examples our linear model works better than the baseline, this encourage us to continue investigating and get the best of our model 
 
 Let's test with Categorical Variables
 
@@ -726,13 +767,13 @@ for name, enc in encoders:
 
 
     
-![png](push_noti_explore_files/push_noti_explore_37_0.png)
+![png](push_noti_explore_files/push_noti_explore_38_0.png)
     
 
 
 
     
-![png](push_noti_explore_files/push_noti_explore_37_1.png)
+![png](push_noti_explore_files/push_noti_explore_38_1.png)
     
 
 
@@ -767,13 +808,13 @@ for name, enc in encoders:
 
 
     
-![png](push_noti_explore_files/push_noti_explore_38_0.png)
+![png](push_noti_explore_files/push_noti_explore_39_0.png)
     
 
 
 
     
-![png](push_noti_explore_files/push_noti_explore_38_1.png)
+![png](push_noti_explore_files/push_noti_explore_39_1.png)
     
 
 
